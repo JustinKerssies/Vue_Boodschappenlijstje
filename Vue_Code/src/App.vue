@@ -35,7 +35,14 @@ const removeTrigger = () => {
 </script>
 
 <template>
-  <RouterLink to="">
+  <nav>
+    <RouterLink to="/create"></RouterLink>
+    <RouterLink to="/overview"></RouterLink>
+
+  </nav>
+  <main>
+    <RouterView> </RouterView>
+  </main>
   <table>
     <td> product <input type="text" v-model="inputProduct"/> </td>
     <td> price <input type="number" v-model="inputValue"/> </td>
